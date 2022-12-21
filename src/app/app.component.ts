@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
@@ -51,5 +51,5 @@ export class AppComponent {
 		this.displayList = matchingSatellites;
 	}
 
-
+	@Input() satelliteList: Satellite[];
 }
